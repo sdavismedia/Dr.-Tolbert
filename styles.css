@@ -1,0 +1,103 @@
+:root {
+  --orange: #f97316;
+  --yellow: #facc15;
+  --maroon: #7f1d1d;
+  --black: #0b0b0b;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+.landing-page {
+  display: grid;
+}
+
+.section {
+  padding: clamp(3rem, 6vw, 5rem) 1.5rem;
+}
+
+.container {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.section-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+h2 {
+  margin: 0.8rem 0 1.2rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+}
+
+ul {
+  margin: 0 0 1.2rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.65rem;
+}
+
+.section-what-this-is {
+  background: linear-gradient(160deg, var(--maroon), #5c1313);
+  color: var(--white);
+}
+
+.section-what-this-is .section-kicker {
+  color: var(--yellow);
+}
+
+.section-what-this-is h2 {
+  color: var(--yellow);
+}
+
+.section-what-this-is ul li::marker {
+  color: var(--orange);
+}
+
+.section-who-this-is-for {
+  background: linear-gradient(180deg, #fff8db, var(--white));
+  border-top: 4px solid var(--orange);
+}
+
+.section-who-this-is-for .section-kicker {
+  color: var(--maroon);
+}
+
+.section-who-this-is-for h2 {
+  color: var(--black);
+}
+
+.section-who-this-is-for ul li::marker {
+  color: var(--maroon);
+}
+
+.callout {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid var(--orange);
+  background: #fff0b5;
+  color: var(--black);
+  font-weight: 600;
+}
